@@ -1,0 +1,123 @@
+﻿
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using jobPortal.Models
+
+@model User
+
+<style>
+    
+    body {
+        background-color: #C0C0C0; 
+    }
+
+    .card {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #F0FFF0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    dl.row {
+        margin-top: 20px;
+    }
+
+    dt.col-sm-2 {
+        font-weight: bold;
+    }
+
+    dd.col-sm-10 {
+        margin-bottom: 10px;
+    }
+
+    /* Dark green button */
+    .btn-dark-green {
+        background-color: #483D8B; /* Dark green */
+        border-color: #191970;
+        color: #fff;
+        padding: 6px 12px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-right: 10px;
+    }
+
+        .btn-dark-green:hover,
+        .btn-dark-green:active {
+            background-color: #555; /* Dark grey on hover or click */
+            border-color: #555;
+        }
+
+    body {
+        background-color: #ced4da;
+    }
+
+</style>
+<div class="card">
+    <h4>Details for User </h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Name
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            Gender
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class="col-sm-2">
+            Age
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class="col-sm-2">
+            Phone Number
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            Address
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt class="col-sm-2">
+            Photo
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoPath)
+        </dd>
+
+        <dt class="col-sm-2">
+            CV
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FilePath)
+        </dd>
+
+    </dl>
+
+    <div>
+        <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-dark-green">Edit</a>
+        <a asp-action="Profile" class="btn btn-dark-green">Back to Profile</a>
+    </div>
+</div>

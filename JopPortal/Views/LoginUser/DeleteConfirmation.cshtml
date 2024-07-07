@@ -1,0 +1,127 @@
+﻿@model jobPortal.Models.User
+
+@{
+    ViewData["Title"] = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+  
+
+    .card {
+        max-width: 750px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #F0FFF0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .text-danger {
+        color: red;
+    }
+
+    .btn-danger {
+        background-color: #8b0000; /* Dark red */
+        border-color: #8b0000;
+    }
+
+    hr {
+        height: 20px;
+        background-color: #2F4F4F; /* Dark red */
+        border: none;
+        margin: 25px 0;
+    }
+
+    .btn-dark-green {
+        background-color: #006400; /* Dark green */
+        border-color: #006400;
+        color: #fff;
+    }
+
+        .btn-dark-green:hover,
+        .btn-dark-green:active {
+            background-color: #555; /* Dark grey on hover or click */
+            border-color: #555;
+        }
+
+    body {
+        background-color: #ced4da;
+    }
+</style>
+<h1>Delete User</h1>
+
+<hr />
+
+<h3>Are you sure you want to delete this user?</h3>
+<div class="card">
+    <h4>User Information</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Gender)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Gender)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhoneNumber)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhoneNumber)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.PhotoPath)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.PhotoPath)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.FilePath)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.FilePath)
+        </dd>
+
+
+    </dl>
+
+    <form asp-action="Delete" asp-controller="LoginUser">
+        <input type="hidden" asp-for="Id" />
+        <p class="text-danger">Deleting this user will permanently remove their data.</p>
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Profile" class="btn btn-dark-green">Back to Profile</a>
+    </form>
+</div>

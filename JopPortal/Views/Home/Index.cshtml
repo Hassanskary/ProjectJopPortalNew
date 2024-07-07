@@ -1,0 +1,398 @@
+﻿@model JopPortal.Models.Search
+@{
+
+    Layout = null;
+}
+@using Microsoft.EntityFrameworkCore;
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Job Hub</title>
+
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+    <!-- font awesome style -->
+    <link href="~/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- nice select -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+
+    <!-- Custom styles for this template -->
+    <link href="~/css/home.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="~/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="hero_area">
+        <!-- header section strats -->
+        <header class="header_section">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-lg custom_nav-container ">
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index"/>
+                        <span>
+                            Job Hub
+                        </span>
+
+
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class=""> </span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav  ml-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" style="margin-top:-23px " asp-action="Index" asp-controller="Home">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-action="About" asp-controller="Home"> About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" asp-action="Explore_Jobs" asp-controller="Home">Jobs</a>
+                                </li>
+
+                                @{
+                                    if (ViewBag.EmailUser == null)
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-action="LogIn" asp-controller="LoginUser">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <span>
+                                                    Login
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-action="SignUp" asp-controller="LoginUser">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <span>
+                                                    Sign Up
+                                                </span>
+                                            </a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-action="Profile" asp-controller="LoginUser">Profile</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a class="nav-link" asp-action="Logout" asp-controller="LoginUser">
+                                                <i class="fa fa-user" aria-hidden="true"></i>
+                                                <span>
+                                                    Log Out
+                                                </span>
+                                            </a>
+                                        </li>
+
+                                    }
+                                }
+
+
+                            </ul>
+                        </div>
+                </nav>
+            </div>
+        </header>
+        <!-- end header section -->
+        <!-- slider section -->
+        <section class="slider_section ">
+            <div class="container ">
+                <div class="row">
+                    <div class="col-lg-7 col-md-8 mx-auto">
+                        <div class="detail-box">
+                            <h1>
+                                Build Your <br>
+                                POWERFUL CAREER
+                            </h1>
+                            <p style="font-size: 18px;">
+                                Discover your next career move with our intuitively crafted job portal. Like the balanced distribution of Lorem Ipsum text, our platform offers a seamless experience tailored to your aspirations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="find_container">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <form asp-action="Show_results" asp-controller="Home" method="post">
+                                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-4">
+                                            <label asp-for="Category" class="control-label" style="color:whitesmoke;font:1000px">Category</label>
+                                            <select asp-for="Category" class="form-control" asp-items="Html.GetEnumSelectList<JopPortal.Models.J_Category>()"></select>
+                                            <span asp-validation-for="Category" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label asp-for="Type" class="control-label" style="color:whitesmoke;font:1000px">Type</label>
+                                            <select asp-for="Type" class="form-control" asp-items="Html.GetEnumSelectList<JopPortal.Models.J_Type>()"></select>
+                                            <span asp-validation-for="Type" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label asp-for="Location" class="control-label" style="color:whitesmoke;font:1000px">Location</label>
+                                            <select asp-for="Location" class="form-control" asp-items="Html.GetEnumSelectList<JopPortal.Models.J_Location>()"></select>
+                                            <span asp-validation-for="Location" class="text-danger"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-group col-lg-4">
+                                            <label asp-for="Min_Salary" class="control-label" style="color:whitesmoke;font:1000px">Minimum Salary</label>
+                                            <input asp-for="Min_Salary" class="form-control" />
+                                            <span asp-validation-for="Min_Salary" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-lg-4">
+                                            <label asp-for="Max_Salary" class="control-label" style="color:whitesmoke;font:1000px">Maximum Salary</label>
+                                            <input asp-for="Max_Salary" class="form-control" />
+                                            <span asp-validation-for="Max_Salary" class="text-danger"></span>
+                                        </div>
+                                        <div class="form-group col-lg-4 d-flex align-items-end">
+                                            <button type="submit" class="btn btn-danger">Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+        <!-- end slider section -->
+    </div>
+    </div>
+    </section>
+    <!-- end slider section -->
+    </div>
+    <!-- about section -->
+
+    <section class="about_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="detail-box">
+                        <div class="heading_container">
+                            <h2>
+                                About Us
+                            </h2>
+                        </div>
+                        <p>
+                            we connect job seekers with opportunities and empower businesses to find top talent effortlessly. With a user-friendly interface and comprehensive job listings, we make the job search and recruitment process seamless. Whether you're a job seeker or an employer, we're here to support you every step of the way. Join us and let's shape the future of recruitment together.
+                        </p>
+                        <a href="">
+                            Read More
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="img-box">
+                        <img src="images/about-img.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end about section -->
+    <!-- expert section -->
+
+    <section class="expert_section layout_padding">
+        <div class="container">
+            <div class="heading_container heading_center" style="margin-top: -70px">
+                <h2>
+                    LOOKING FOR EXPERTS?
+                </h2>
+                <p>
+                    Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam nulla mauris
+                    iaculis. Erat eget vitae malesuada, tortor tincidunt porta lorem lectus.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/e1.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <a href="">
+                                Martin Anderson
+                            </a>
+                            <h6 class="expert_position">
+                                <span>
+                                    Web Anaylzer
+                                </span>
+                                <span>
+                                    41 Jobs Done
+                                </span>
+                            </h6>
+                            <span class="expert_rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam
+                                nulla
+                                mauris iaculis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/e2.jpg"  style = "height: 270px" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <a href="">
+                                Semanta Klores
+                            </a>
+                            <h6 class="expert_position">
+                                <span>
+                                    Graphic Designer
+                                </span>
+                                <span>
+                                    32 Jobs Done
+                                </span>
+                            </h6>
+                            <span class="expert_rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam
+                                nulla
+                                mauris iaculis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mx-auto">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="images/e3.jpg" alt="">
+                        </div>
+                        <div class="detail-box">
+                            <a href="">
+                                Ryan Martines
+                            </a>
+                            <h6 class="expert_position">
+                                <span>
+                                    SEO Expert
+                                </span>
+                                <span>
+                                    27 Jobs Done
+                                </span>
+                            </h6>
+                            <span class="expert_rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <p>
+                                Lorem ipsum dolor sit amet, non odio tincidunt ut ante, lorem a euismod suspendisse vel, sed quam
+                                nulla
+                                mauris iaculis.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- end expert section -->
+    <!-- info section -->
+    <section class="info_section ">
+        <div class="container">
+            <div class="row" style="margin-left: 200px">
+                <div class="col-md-3">
+                    <h4>
+                        Jobs
+                    </h4>
+                    <p>
+                        Established fact that a reader will be distracted by the readable content of a page when looking at its
+                        layout. The point of using Lorem Ipsum
+                    </p>
+                </div>
+                <div class="col-md-3" style="margin-left: 230px">
+                    <div class="info_social">
+                        <h4>
+                            Social Link
+                        </h4>
+                        <div class="social_container">
+                            <div>
+                                <a href="">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                            <div>
+                                <a href="">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end info_section -->
+    <!-- footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By
+                <a href="https://html.design/">Free Html Templates</a>
+            </p>
+        </div>
+    </footer>
+    <!-- footer section -->
+    <!-- jQery -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

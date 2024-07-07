@@ -1,0 +1,41 @@
+﻿@model IEnumerable<jobPortal.Models.ApplyJob>
+
+@{
+    ViewData["Title"] = "My Applications";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<link rel="stylesheet" href="~/css/applicanits.css" />
+<style>
+    body {
+        background-color: white;
+    }
+</style>
+<div class="header">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<div class="container">
+    @foreach (var application in Model)
+    {
+        <div class="card" style="width: 600px">
+            <div class="card-body card-details" style="text-align: left">
+                <h2 class="card-title">@application.Job.JobCategory</h2>
+                <p><strong>Date Applied:</strong> @application.Date.ToString("MM/dd/yyyy")</p>
+                <p><strong>Status:</strong> @application.State</p>
+                <div class="actions">
+                    <a class="btn" asp-action="ShowJob" asp-controller="Apply" asp-route-id="@application.JobId">
+                        <i class="fas fa-info-circle"></i> Details
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<p class="return-profile-btn">
+    <a class="btn" href="@Url.Action("Profile", "LoginUser")">
+        <i class="fas fa-arrow-left"></i> Return to Profile
+    </a>
+</p>

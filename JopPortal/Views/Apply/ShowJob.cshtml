@@ -1,0 +1,51 @@
+﻿@model JopPortal.Models.Job
+
+@{
+    ViewData["Title"] = "Show Job";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<link rel="stylesheet" href="~/css/ExploreJobs.css" />
+
+<div class="header">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<div class="container">
+    <div class="card">
+        <div class="card-body card-details">
+            <h2 class="card-title">@Model.JobCategory</h2>
+            <p class="custom-margin"><strong>Type:</strong> @Model.JobType</p>
+            <p class="custom-margin"><strong>Location:</strong> @Model.JopLocation</p>
+            <p class="custom-margin"><strong>Salary:</strong> @Model.JopSalary</p>
+            <p class="custom-margin"><strong>Available Places:</strong> @Model.AvailablePlaces</p>
+            <p class="custom-margin"><strong>Date:</strong> @Model.JobDate.ToString("MM/dd/yyyy")</p>
+            <p class="custom-margin"><strong>Description:</strong> @Model.JobDescription</p>
+            @if (Model.Company != null)
+            {
+                <p class="custom-margin"><strong>Company:</strong> @Model.Company.CompanyName</p>
+            }
+
+            <div class="actions">
+                @if (ViewBag.HasApplied)
+                {
+                    <form asp-action="CancelApplication" asp-controller="Apply" method="post" style="display: inline;">
+                        <input type="hidden" name="jobId" value="@Model.JobId" />
+                        <button type="submit" class="btn btn-danger">Cancel Application</button>
+                    </form>
+                }
+                else
+                {
+                    <form asp-action="ApplyForJob" asp-controller="Apply" method="post" style="display: inline;">
+                        <input type="hidden" name="jobId" value="@Model.JobId" />
+                        <button type="submit" class="btn btn-primary">Apply for this Job</button>
+                    </form>
+                }
+                <form asp-action="Explore_Jobs" asp-controller="Home" method="post" style="display: inline;">
+                    <input type="hidden" />
+                    <button type="submit" class="btn btn-primary">Back to Exploring Jobs</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,112 @@
+﻿@using jobPortal.Models
+
+@model User
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="~/css/profile.css" />
+    <style>
+        .cv-container {
+            margin-top: 20px;
+        }
+
+            .cv-container iframe {
+                width: 100%;
+                height: 500px;
+                border: none;
+            }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="card user-card" style="width: 1200px;  text-align: left; padding-left: 30px" >
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="card-title">User Details</h2>
+                            <h3 class="card-text"><strong>Full Name:</strong> @Model.Name</h3>
+                            <h3 class="card-text"><strong>Email:</strong> @Model.Email</h3>
+                            <h3 class="card-text"><strong>Phone Number:</strong> @Model.PhoneNumber</h3>
+                            <h3 class="card-text"><strong>Age:</strong> @Model.Age</h3>
+                            <h3 class="card-text"><strong>Address:</strong> @Model.Address</h3>
+                            <h3 class="card-text">
+                                <strong>CV:</strong> @Model.FilePath
+                                <br />
+                                @if (!string.IsNullOrEmpty(@Model.FilePath))
+                                {
+                                    var cvPath = Url.Action("ViewCV", "LoginUser", new { filePath = @Model.FilePath });
+                                    <a href="@cvPath" target="_blank" class="btn btn-primary">View CV</a>
+                                    <a href="@Url.Content($"~/CV/{@Model.FilePath}")" download class="btn btn-primary">Download CV</a>
+                                }
+                                else
+                                {
+                                    <p>No CV uploaded</p>
+                                }
+                            </h3>
+                        </div>
+                        <div class="col-md-6 text-left">
+                            @if (!string.IsNullOrEmpty(@Model.PhotoPath))
+                            {
+                                var imagePath = Url.Content($"~/images/{@Model.PhotoPath}");
+                                <img src="@imagePath" alt="User Photo" class="user-photo" style="margin-left: 200px;" />
+                            }
+                            else
+                            {
+                                <p>No Photo</p>
+                            }
+                        </div>
+                    </div>
+                    <div class="cv-container" id="cvContainer" style="display: none;">
+                        <iframe id="cvFrame" src=""></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-container">
+                <form asp-controller="LoginUser" asp-action="DeleteConfirmation" asp-route-id="@Model.Id">
+                    <div class="solved">
+                        <button class="btn">Delete Account</button>
+                    </div>
+                </form>
+                <form asp-controller="LoginUser" asp-route-id="@Model.Id" asp-action="Edit">
+                    <div class="solved">
+                        <button class="btn">Edit Account</button>
+                    </div>
+                </form>
+                <form asp-controller="LoginUser" asp-route-id="@Model.Id" asp-action="Details">
+                    <div class="solved">
+                        <button class="btn">Details Account</button>
+                    </div>
+                </form>
+                <form asp-controller="LoginUser" asp-action="MyApplications">
+                    <div class="solved">
+                        <button class="btn">My Applications</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleCV(cvPath) {
+            var cvContainer = document.getElementById('cvContainer');
+            var cvFrame = document.getElementById('cvFrame');
+            if (cvContainer.style.display === 'none') {
+                cvFrame.src = cvPath;
+                cvContainer.style.display = 'block';
+            } else {
+                cvContainer.style.display = 'none';
+                cvFrame.src = '';
+            }
+        }
+    </script>
+</body>
+</html>

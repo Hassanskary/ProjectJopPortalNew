@@ -1,0 +1,86 @@
+﻿@model IEnumerable<jobPortal.Models.ApplyJob>
+
+@{
+    ViewData["Title"] = "Applicants for Job";
+    Layout = "~/Views/Shared2/_Layout.cshtml";
+
+}
+
+<h1>@ViewData["Title"]</h1>
+
+@if (Model.Count() > 0)
+{
+    <style>
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .action-buttons form {
+            display: inline-block; /* Display forms inline */
+            margin-right: 10px; /* Add margin to the right of each button */
+        }
+
+            .action-buttons form:last-child {
+                margin-right: 0; /* Remove margin for the last button */
+            }
+    </style>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Applyer Nmae</th>
+                <th>Job Category</th>
+                <th>CV</th>
+                <th>Date Applied</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @{
+                int idx = 0;
+                foreach (var application in Model)
+                {
+                    <tr>
+                        <td> @ViewBag.uname[idx]</td>
+                        <td> @ViewBag.jname[idx++] </td>
+                        <td>
+
+                            @if (!string.IsNullOrEmpty(application.FilePath))
+                            {
+                                var cvPath = Url.Content($"~/CV/{application.FilePath}");
+                                <a href="@cvPath" target="_blank">Download CV</a>
+                            }
+
+
+                        </td>
+                        <td>@application.Date</td>
+                        <td class="action-buttons">
+                            <form asp-action="AcceptApplication" asp-route-id="@application.JobId">
+                                <button type="submit" class="btn btn-success">Accept</button>
+                            </form>
+                            <form asp-action="RejectApplication" asp-route-id="@application.JobId">
+                                <button type="submit" class="btn btn-danger">Reject</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            }
+
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No applicants found.</p>
+}

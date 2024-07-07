@@ -1,0 +1,72 @@
+﻿@using jobPortal.Models
+@model Company
+@{
+    ViewBag.Title = "Company Profile";
+    Layout = "~/Views/Shared2/_Layout.cshtml";
+
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/profile.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container" style="margin-left: 80px;">
+                <div class="card user-card" style="width: 1000px; text-align: left; padding-left: 30px ;padding-top: 30px; height: 350px; margin-top: -50px ">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h2 class="card-title">Company Details</h2>
+                            <p class="card-text" style="font-size: 22px"><strong>Company Name:</strong> @Model.CompanyName</p>
+                            <p class="card-text"  style="font-size: 22px"><strong>Company Email:</strong> @Model.CompanyEmail</p>
+                        <p class="card-text" style="font-size: 22px"><strong>Description:</strong> @Model.CompanyDescription</p>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <div class="text-center">
+                                <h2 class="card-title">Company Logo</h2>
+                                @if (!string.IsNullOrEmpty(@Model.PhotoPath))
+                                {
+                                    var imagePath = Url.Content($"~/images/{@Model.PhotoPath}");
+                                    <img src="@imagePath" alt="Company Logo" class="user-photo" style="margin-left: 18px" />
+                                }
+                                else
+                                {
+                                    <p>No Photo</p>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       
+        
+        </div>
+    <div class="button-container" style="margin-left: 100px;">
+        <form asp-controller="Job" asp-action="alljobs">
+            <div class="solved" style="margin-top: -100px;">
+                <button class="btn">My Posted Jobs</button>
+            </div>
+        </form>
+        <form asp-controller="LoginCompany" asp-action="DeleteConfirmation" asp-route-id="@Model.CompanyId">
+            <div class="solved" style="margin-top: -100px;">
+                <button class="btn">Delete Account</button>
+            </div>
+        </form>
+        <form asp-controller="LoginCompany" asp-route-id="@Model.CompanyId" asp-action="Edit">
+            <div class="solved" style="margin-top: -100px;">
+                <button class="btn">Edit Account</button>
+            </div>
+        </form>
+        <form asp-controller="LoginCompany" asp-route-id="@Model.CompanyId" asp-action="Details">
+            <div class="solved" style="margin-top: -100px;">
+                <button class="btn">Account Details</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</body>
+</html>

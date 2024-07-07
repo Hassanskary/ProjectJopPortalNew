@@ -1,0 +1,701 @@
+{
+  "Files": [
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\obj\\Release\\net6.0\\win-x86\\scopedcss\\projectbundle\\JopPortal.bundle.scp.css",
+      "PackagePath": "staticwebassets\\JopPortal.bundle.scp.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\11_presentation.pptx",
+      "PackagePath": "staticwebassets\\CV\\11_presentation.pptx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\38_Presentation (2) (1) (5).pptx",
+      "PackagePath": "staticwebassets\\CV\\38_Presentation (2) (1) (5).pptx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\38_Presentation (3).pptx",
+      "PackagePath": "staticwebassets\\CV\\38_Presentation (3).pptx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\49b17e71dec7b586.jpg",
+      "PackagePath": "staticwebassets\\CV\\49b17e71dec7b586.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\5f07de18-aa32-473d-b7e2-d3b84078aca1.jpeg",
+      "PackagePath": "staticwebassets\\CV\\5f07de18-aa32-473d-b7e2-d3b84078aca1.jpeg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\CS313_Lect_03 (1).pptx",
+      "PackagePath": "staticwebassets\\CV\\CS313_Lect_03 (1).pptx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\CS313_Lect_03.pptx",
+      "PackagePath": "staticwebassets\\CV\\CS313_Lect_03.pptx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\Final_Lecture_1.pdf",
+      "PackagePath": "staticwebassets\\CV\\Final_Lecture_1.pdf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\General-Question-Bank.pdf",
+      "PackagePath": "staticwebassets\\CV\\General-Question-Bank.pdf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\Gym Final.docx",
+      "PackagePath": "staticwebassets\\CV\\Gym Final.docx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\Gym.docx",
+      "PackagePath": "staticwebassets\\CV\\Gym.docx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\The progect ai.docx",
+      "PackagePath": "staticwebassets\\CV\\The progect ai.docx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\Welcome to MEGA.pdf",
+      "PackagePath": "staticwebassets\\CV\\Welcome to MEGA.pdf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\ahmed CV.pdf",
+      "PackagePath": "staticwebassets\\CV\\ahmed CV.pdf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\kthpq__a_KTH_beamer_template.pdf",
+      "PackagePath": "staticwebassets\\CV\\kthpq__a_KTH_beamer_template.pdf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\CV\\mid ai.pdf",
+      "PackagePath": "staticwebassets\\CV\\mid ai.pdf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\ExploreJobs.css",
+      "PackagePath": "staticwebassets\\css\\ExploreJobs.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\all-jobs.css",
+      "PackagePath": "staticwebassets\\css\\all-jobs.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\applicanits.css",
+      "PackagePath": "staticwebassets\\css\\applicanits.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\applyjob.css",
+      "PackagePath": "staticwebassets\\css\\applyjob.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\create-job.css",
+      "PackagePath": "staticwebassets\\css\\create-job.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\delete-job.css",
+      "PackagePath": "staticwebassets\\css\\delete-job.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\delete-user.css",
+      "PackagePath": "staticwebassets\\css\\delete-user.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\details-job.css",
+      "PackagePath": "staticwebassets\\css\\details-job.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\details-user.css",
+      "PackagePath": "staticwebassets\\css\\details-user.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\edit-job.css",
+      "PackagePath": "staticwebassets\\css\\edit-job.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\edit-user.css",
+      "PackagePath": "staticwebassets\\css\\edit-user.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\my_app.css",
+      "PackagePath": "staticwebassets\\css\\my_app.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\profile.css",
+      "PackagePath": "staticwebassets\\css\\profile.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\responsive.css",
+      "PackagePath": "staticwebassets\\css\\responsive.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\show-applicatins.css",
+      "PackagePath": "staticwebassets\\css\\show-applicatins.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\signin-company.css",
+      "PackagePath": "staticwebassets\\css\\signin-company.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\signin.css",
+      "PackagePath": "staticwebassets\\css\\signin.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\signup-company.css",
+      "PackagePath": "staticwebassets\\css\\signup-company.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\signup-user.css",
+      "PackagePath": "staticwebassets\\css\\signup-user.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\signup.css",
+      "PackagePath": "staticwebassets\\css\\signup.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\css\\util.css",
+      "PackagePath": "staticwebassets\\css\\util.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\1.jpg",
+      "PackagePath": "staticwebassets\\images\\1.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\129408815_mediaitem129408814.jpg",
+      "PackagePath": "staticwebassets\\images\\129408815_mediaitem129408814.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\1688608430374.jpg",
+      "PackagePath": "staticwebassets\\images\\1688608430374.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\1688608607732.jpg",
+      "PackagePath": "staticwebassets\\images\\1688608607732.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\1688609409134.jpg",
+      "PackagePath": "staticwebassets\\images\\1688609409134.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\1688613259523.jpg",
+      "PackagePath": "staticwebassets\\images\\1688613259523.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\21edeca0c5fd22bc.jpg",
+      "PackagePath": "staticwebassets\\images\\21edeca0c5fd22bc.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\28.jpg",
+      "PackagePath": "staticwebassets\\images\\28.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\4c1d4de6-fbdf-42ff-a093-a20ed0fed689.jpeg",
+      "PackagePath": "staticwebassets\\images\\4c1d4de6-fbdf-42ff-a093-a20ed0fed689.jpeg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\5f07de18-aa32-473d-b7e2-d3b84078aca1.jpeg",
+      "PackagePath": "staticwebassets\\images\\5f07de18-aa32-473d-b7e2-d3b84078aca1.jpeg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\8.jpg",
+      "PackagePath": "staticwebassets\\images\\8.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\CS313_Lect_03 (1).pptx",
+      "PackagePath": "staticwebassets\\images\\CS313_Lect_03 (1).pptx"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\ExploreJobs.jpg",
+      "PackagePath": "staticwebassets\\images\\ExploreJobs.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20210110_171216_019.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20210110_171216_019.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20210118_174632_879.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20210118_174632_879.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20210810_020057_413.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20210810_020057_413.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20210811_150120_081.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20210811_150120_081.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20210901_132948_289.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20210901_132948_289.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20211211_221621_132.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20211211_221621_132.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20211211_222431_187.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20211211_222431_187.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\IMG_20220224_045044_716.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_20220224_045044_716.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\MyJobs.jpg",
+      "PackagePath": "staticwebassets\\images\\MyJobs.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\Screenshot (269).png",
+      "PackagePath": "staticwebassets\\images\\Screenshot (269).png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\WIN_20240121_06_42_58_Pro.jpg",
+      "PackagePath": "staticwebassets\\images\\WIN_20240121_06_42_58_Pro.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\about-img.jpg",
+      "PackagePath": "staticwebassets\\images\\about-img.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\ahmed CV.pdf",
+      "PackagePath": "staticwebassets\\images\\ahmed CV.pdf"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\all-jobs.jpg",
+      "PackagePath": "staticwebassets\\images\\all-jobs.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\applicanits.jpg",
+      "PackagePath": "staticwebassets\\images\\applicanits.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\arif-riyanto-vJP-wZ6hGBg-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\arif-riyanto-vJP-wZ6hGBg-unsplash.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\c1.png",
+      "PackagePath": "staticwebassets\\images\\c1.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\c2.png",
+      "PackagePath": "staticwebassets\\images\\c2.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\c3.png",
+      "PackagePath": "staticwebassets\\images\\c3.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\c4.png",
+      "PackagePath": "staticwebassets\\images\\c4.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\c5.png",
+      "PackagePath": "staticwebassets\\images\\c5.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\c6.png",
+      "PackagePath": "staticwebassets\\images\\c6.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\company-login.jpg",
+      "PackagePath": "staticwebassets\\images\\company-login.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\crud.jpg",
+      "PackagePath": "staticwebassets\\images\\crud.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\e1.jpg",
+      "PackagePath": "staticwebassets\\images\\e1.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\e2.jpg",
+      "PackagePath": "staticwebassets\\images\\e2.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\e3.jpg",
+      "PackagePath": "staticwebassets\\images\\e3.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\ed31a30e-3c43-4f3a-bed5-781941fb3650.png",
+      "PackagePath": "staticwebassets\\images\\ed31a30e-3c43-4f3a-bed5-781941fb3650.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\hassan.jpg",
+      "PackagePath": "staticwebassets\\images\\hassan.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\home.jpg",
+      "PackagePath": "staticwebassets\\images\\home.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\images.jpg",
+      "PackagePath": "staticwebassets\\images\\images.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\img12.jpg",
+      "PackagePath": "staticwebassets\\images\\img12.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\j1.jpg",
+      "PackagePath": "staticwebassets\\images\\j1.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\j2.jpg",
+      "PackagePath": "staticwebassets\\images\\j2.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\j3.jpg",
+      "PackagePath": "staticwebassets\\images\\j3.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\j4.jpg",
+      "PackagePath": "staticwebassets\\images\\j4.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\j5.jpg",
+      "PackagePath": "staticwebassets\\images\\j5.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\job_logo1.png",
+      "PackagePath": "staticwebassets\\images\\job_logo1.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\job_logo2.png",
+      "PackagePath": "staticwebassets\\images\\job_logo2.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\job_logo3.png",
+      "PackagePath": "staticwebassets\\images\\job_logo3.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\job_logo4.png",
+      "PackagePath": "staticwebassets\\images\\job_logo4.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\job_logo5.png",
+      "PackagePath": "staticwebassets\\images\\job_logo5.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\job_logo6.png",
+      "PackagePath": "staticwebassets\\images\\job_logo6.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\photo_2022-07-27_00-52-49.jpg",
+      "PackagePath": "staticwebassets\\images\\photo_2022-07-27_00-52-49.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\photo_2023-01-14_12-41-57.jpg",
+      "PackagePath": "staticwebassets\\images\\photo_2023-01-14_12-41-57.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\profile.png",
+      "PackagePath": "staticwebassets\\images\\profile.png"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\sign-user.jpg",
+      "PackagePath": "staticwebassets\\images\\sign-user.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\signin-company.jpg",
+      "PackagePath": "staticwebassets\\images\\signin-company.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\images\\slider-bg11.jpg",
+      "PackagePath": "staticwebassets\\images\\slider-bg11.jpg"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\js\\custom.js",
+      "PackagePath": "staticwebassets\\js\\custom.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\js\\jquery-3.4.1.min.js",
+      "PackagePath": "staticwebassets\\js\\jquery-3.4.1.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\js\\login.js",
+      "PackagePath": "staticwebassets\\js\\login.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "F:\\VS\\Mvc Project\\Job-Portal 245\\JopPortal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.JopPortal.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.build.JopPortal.props",
+      "PackagePath": "build\\JopPortal.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.JopPortal.props",
+      "PackagePath": "buildMultiTargeting\\JopPortal.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.JopPortal.props",
+      "PackagePath": "buildTransitive\\JopPortal.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

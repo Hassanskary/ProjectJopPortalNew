@@ -1,0 +1,159 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = JopPortal
+build_property.RootNamespace = JopPortal
+build_property.ProjectDir = F:\VS\Mvc Project\Job-Portal 245\JopPortal\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\VS\Mvc Project\Job-Portal 245\JopPortal
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Apply/ShowJob.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBwbHlcU2hvd0pvYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/CompanyHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29tcGFueUhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Home/Explore_Jobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFeHBsb3JlX0pvYnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Home/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTZWFyY2guY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Home/Show_results.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTaG93X3Jlc3VsdHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Job/alljobs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXGFsbGpvYnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Job/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Job/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Job/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Job/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Job/ShowApplicants.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9iXFNob3dBcHBsaWNhbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginCompany/DeleteConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Db21wYW55XERlbGV0ZUNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginCompany/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Db21wYW55XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginCompany/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Db21wYW55XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginCompany/EditPass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Db21wYW55XEVkaXRQYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginCompany/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Db21wYW55XExvZ0luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginCompany/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Db21wYW55XFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginCompany/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Db21wYW55XFNpZ25VcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/DeleteConfirmation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXERlbGV0ZUNvbmZpcm1hdGlvbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/EditPass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXEVkaXRQYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/LogIn.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXExvZ0luLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/MyApplications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXE15QXBwbGljYXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/SignUp.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXFNpZ25VcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/LoginUser/ViewCV.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5Vc2VyXFZpZXdDVi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Shared2/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkMlxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/VS/Mvc Project/Job-Portal 245/JopPortal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-knatj93amu

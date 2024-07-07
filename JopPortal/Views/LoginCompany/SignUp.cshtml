@@ -1,0 +1,98 @@
+﻿@using JopPortal.Models
+@model Company
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title> 
+    <link rel="stylesheet" href="~/css/signup-company.css">
+    <style>
+        .wrap-input100 {
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                <form class="login100-form validate-form" method="post" enctype="multipart/form-data" asp-controller="LoginCompany" asp-action="SignUpSave">
+
+                    <div class="login100-form-title p-b-26 create-account">
+                        Create an Account
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Enter your name">
+                        <input asp-for="CompanyName" class="input100" placeholder="Company Name" />
+                        <span asp-validation-for="CompanyName" class="focus-input100 text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
+                        <input asp-for="CompanyEmail" class="input100" placeholder="Company Email" />
+                        <span asp-validation-for="CompanyEmail" class="focus-input100 text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter password">
+                        <span class="btn-show-pass">
+                            <i class="zmdi zmdi-eye"></i>
+                        </span>
+                        <input asp-for="CompanyPassword" class="input100" type="password" placeholder="Company Password" />
+                        <span asp-validation-for="CompanyPassword" class="focus-input100 text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Repeat password">
+                        <span class="btn-show-pass">
+                            <i class="zmdi zmdi-eye"></i>
+                        </span>
+                        <input asp-for="ConfirmPassword" class="input100" type="password" placeholder="Repeat Password" />
+                        <span asp-validation-for="ConfirmPassword" class="focus-input100 text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Description">
+                        <input asp-for="CompanyDescription" class="input100" type="text" placeholder="Description" />
+                        <span asp-validation-for="CompanyDescription" class="focus-input100 text-danger"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-" data-validate="Upload Company Logo">
+                        <label> Upload Company Logo : </label>
+                        <input type="file" asp-for="PhotoPath" class="input100" name="img_file">
+                        <span asp-validation-for="PhotoPath" class="text-danger" style="color: red;"></span>
+                    </div>
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="container-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="text-center p-t-115 signup-txt">
+                        <span class="txt1">
+                            Already have an account?
+                        </span>
+                        <a asp-action="LogIn" asp-controller="LoginCompany" class="txt2"> Log In </a>
+                    </div>
+
+                    <div class="text-center p-t-115 signup-txt">
+                        <span class="txt1">
+                            You are not Company
+                        </span>
+                        <a asp-action="SignUp" asp-controller="LoginUser" class="txt2">User Sign Up</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

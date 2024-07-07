@@ -1,0 +1,29 @@
+﻿@using jobPortal.Models
+
+@model User
+@{
+    ViewData["Title"] = "View CV";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@if (ViewBag.MimeType == "application/pdf" || ViewBag.Extension == ".pptx" || ViewBag.Extension == ".doc" || ViewBag.Extension == ".docx")
+{
+    @if (ViewBag.Extension == ".pdf")
+    {
+        <embed src="@ViewBag.CVPath" type="@ViewBag.MimeType" style="width: 150%; height: 100vh; border: none;" />
+    }
+    else if (ViewBag.Extension == ".pptx" || ViewBag.Extension == ".doc" || ViewBag.Extension == ".docx")
+    {
+        <iframe src="https://docs.google.com/viewer?url=@ViewBag.CVPath&embedded=true" style="width: 100%; height: 100vh; border: none;"></iframe>
+    }
+}
+else
+{
+    <p>Cannot display this file type. Please download it to view.</p>
+    <a href="@ViewBag.CVPath" download class="btn btn-secondary">Download CV</a>
+}
+
+<div style="text-align: center; margin-top: 20px;">
+    <a href="@Url.Action("Profile", "LoginUser")" class="btn btn-primary">Back to Profile</a>
+    <a href="@ViewBag.CVPath" download class="btn btn-secondary">Download CV</a>
+</div>

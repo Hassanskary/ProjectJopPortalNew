@@ -1,0 +1,98 @@
+﻿@using jobPortal.Models
+
+@model Company
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared2/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-color: #C0C0C0;
+    }
+
+    .card {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #F0FFF0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .text-danger {
+        color: red;
+    }
+
+    .btn-primary {
+        background-color: #8b0000;
+        border-color: #8b0000;
+    }
+
+    hr {
+        height: 15px;
+        background-color: #008080;
+        border: none;
+        margin: 25px 0;
+    }
+
+</style>
+
+<h1>Edit Compnay  </h1>
+<hr />
+<div class="card">
+    <form asp-action="SaveEdit" asp-controller="LoginCompany" method="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="CompanyId" />
+
+        <div class="form-group">
+            <label asp-for="CompanyName" class="control-label"></label>
+            <input asp-for="CompanyName" class="form-control" />
+            <span asp-validation-for="CompanyName" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CompanyEmail" class="control-label"></label>
+            <input asp-for="CompanyEmail" class="form-control" />
+            <span asp-validation-for="CompanyEmail" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="CompanyDescription" class="control-label"></label>
+            <input asp-for="CompanyDescription" class="form-control" />
+            <span asp-validation-for="CompanyDescription" class="text-danger"></span>
+        </div>
+
+            <div class="form-group">
+                <label asp-for="PhotoPath" class="control-label"></label>
+                <input type="file" asp-for="PhotoPath" name="img_file" class="input100" />
+                <span asp-validation-for="PhotoPath" class="text-danger"></span>
+            </div>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <span>
+                    <input type="submit" value="Save" class="btn btn-primary" />
+                    <a asp-action="Profile" class="btn btn-primary">Back to Profile</a>
+                </span>
+            </div>
+        <div>
+            <a asp-action="EditPass" class="btn btn-primary">Change Password</a>
+
+        </div>
+    </form>
+</div>
+
+
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

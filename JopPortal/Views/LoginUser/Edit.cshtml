@@ -1,0 +1,132 @@
+﻿@using jobPortal.Models
+
+@model User
+@{
+    ViewData["Title"] = "Edit";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    body {
+        background-color: #C0C0C0;
+    }
+
+    .card {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        background-color: #F0FFF0;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .text-danger {
+        color: red;
+    }
+
+    .btn-primary {
+        background-color: #8b0000;
+        border-color: #8b0000;
+    }
+
+    hr {
+        height: 15px;
+        background-color: #008080; 
+        border: none;
+        margin: 25px 0;
+    }
+
+</style>
+
+<h1>Edit User </h1>
+<hr />
+<div class="card">
+    <form asp-action="SaveEdit" asp-controller="LoginUser" method ="post" enctype="multipart/form-data">
+        <input type="hidden" asp-for="Id" />
+
+        <div class="form-group">
+            <label asp-for="Name" class="control-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="control-label"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <label asp-for="Age" class="control-label"></label>
+            <input asp-for="Age" class="form-control" />
+            <span asp-validation-for="Age" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Address" class="control-label"></label>
+            <input asp-for="Address" class="form-control" />
+            <span asp-validation-for="Address" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="PhoneNumber" class="control-label"></label>
+            <input asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+
+        <div class="validate-input" data-validate="Gender">
+            <div class="gender-container">
+                <label class="gender-label" for="gender">Gender :</label>
+                <div class="gender-radio">
+                    <input asp-for="Gender" class="gender-input" type="radio" id="male" value="Male">
+                    <label for="male" class="gender-option">Male</label>
+                </div>
+                <div class="gender-radio">
+                    <input asp-for="Gender" class="gender-input" type="radio" id="female" value="Female">
+                    <label for="female" class="gender-option">Female</label>
+                    <span asp-validation-for="Gender"></span>
+                </div>
+            </div>
+        
+        <div class="form-group">
+            <label asp-for="PhotoPath" class="control-label"></label>
+                <input type="file" asp-for="PhotoPath" name="img_file" class="input100"  />
+                <span asp-validation-for="PhotoPath" class="text-danger"></span>
+        </div>
+
+            <div class="form-group">
+                <label asp-for="FilePath" class="control-label" > File CV</label>
+                <input type="file" asp-for="FilePath" class="input100" name="file" />
+                <span asp-validation-for="FilePath" class="text-danger"></span>
+            </div>
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+
+        <div class="form-group">
+            <span>
+                <input type="submit" value="Save" class="btn btn-primary"  />
+                <a asp-action="Profile" class="btn btn-primary">Back to Profile</a>
+                </span>
+        </div>
+            
+
+    </form>
+</div>
+
+<div>
+    <a asp-action="EditPass" class="btn btn-primary" asp-route-userId="@Model.Id">Change Password</a>
+   
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,140 @@
+﻿@using jobPortal.Models
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="~/css/signup-user.css">
+    <style>
+        .wrap-input100 {
+            position: relative;
+        }
+
+        .focus-input100 {
+            position: absolute;
+            bottom: -20px;
+            left: 0;
+            color: red;
+            font-size: 12px;
+        }
+
+        .error-message {
+            color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="limiter">
+        <div class="container-login100">
+            <div class="wrap-login100">
+                @model User
+                <form class="login100-form validate-form" method="post" asp-controller="LoginUser" asp-action="SignUpSave" enctype="multipart/form-data">
+                    <div class="login100-form-title p-b-26 create-account">
+                        Create an Account
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter your name">
+                        <input asp-for="Name" class="input100" placeholder="Your Name" />
+                        <span asp-validation-for="Name" class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Valid email is: a@b.c">
+                        <input asp-for="Email" class="input100" placeholder="Email" />
+                        <span asp-validation-for="Email" class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter phone number">
+                        <input asp-for="PhoneNumber" class="input100" placeholder="Phone Number" />
+                        <span asp-validation-for="PhoneNumber" class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter password">
+                        <span class="btn-show-pass">
+                            <i class="zmdi zmdi-eye"></i>
+                        </span>
+                        <input asp-for="Password" class="input100" type="password" placeholder="Password" />
+                        <span asp-validation-for="Password" class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Repeat password">
+                        <span class="btn-show-pass">
+                            <i class="zmdi zmdi-eye"></i>
+                        </span>
+                        <input asp-for="ConfirmPassword" class="input100" type="password" placeholder="Repeat Password" />
+                        <span asp-validation-for="ConfirmPassword" class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter Age">
+                        <input asp-for="Age" type="number" class="input100" placeholder="Age" />
+                        <span asp-validation-for="Age" class="focus-input100"></span>
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Enter Address">
+                        <input asp-for="Address" type="text" class="input100" placeholder="Adress" />
+                        <span asp-validation-for="Address" class="focus-input100"></span>
+                    </div>
+
+                    <div class="validate-input" data-validate="Gender">
+                        <div class="gender-container">
+                            <label class="gender-label" for="gender">Gender :</label>
+                            <div class="gender-radio">
+                                <input asp-for="Gender" class="gender-input" type="radio" id="male" value="Male">
+                                <label for="male" class="gender-option">Male</label>
+                            </div>
+                            <div class="gender-radio">
+                                <input asp-for="Gender" class="gender-input" type="radio" id="female" value="Female">
+                                <label for="female" class="gender-option">Female</label>
+                                <span asp-validation-for="Gender"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrap-input100 validate-input" data-validate="Upload Profile Picture">
+                        <br/>
+                        <label > Upload your Photo : </label>
+                        <input type="file" asp-for="PhotoPath" class="input100" name="img_file" />
+                        <span asp-validation-for="PhotoPath" class="text-danger" style="color: red;"></span> 
+                        <img id="myImg" />
+                    </div>
+
+                    <div class="wrap-input100 validate-input" data-validate="Upload your CV">
+                        <br>
+                        <label  > Upload your CV : </label>
+                        <input type="file" asp-for="FilePath" class="input100" name="file" />
+                        <span asp-validation-for="FilePath" class="text-danger" style="color: red;"></span>
+                        <img id="myImg" />
+                    </div>
+
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                    <div class="container-login100-form-bt0">
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn">
+                                Sign Up
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="text-center p-t-115 signup-txt">
+                        <span class="txt1">
+                            Already have an account?
+                        </span>
+                        <a asp-action="LogIn" asp-controller="LoginUser" class="txt2"> Log In </a>
+                    </div>
+                    <div class="text-center p-t-115 signup-txt">
+                        <span class="txt1">
+                            You are not user
+                        </span>
+                        <a asp-action="SignUp" asp-controller="LoginCompany" class="txt2">Company Sign Up </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+﻿@model IEnumerable<JopPortal.Models.Job>
+
+@{
+    ViewData["Title"] = "My Jobs";
+    Layout = "~/Views/Shared2/_Layout.cshtml";
+
+} 
+<style>
+    body {
+        background-color: white;
+    }
+    .header {
+        text-align: center;
+        margin: 20px 0;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card {
+        width: 800px;
+        margin: 10px 0;
+    }
+    .create-new-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+</style>
+<link rel="stylesheet" href="~/css/all-jobs.css" />
+
+<div class="header">
+    <h1 style="margin-left: 350px;">@ViewData["Title"]</h1>
+</div>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="card" style="width: 800px;">
+            <div class="card-body card-details">
+                <h2 class="card-title">@item.JobCategory</h2>
+                <p><strong>Type:</strong> @item.JobType</p>
+                <p><strong>Location:</strong> @item.JopLocation</p>
+                <p><strong>Salary:</strong> @item.JopSalary</p>
+                <p><strong>Available Places:</strong> @item.AvailablePlaces</p>
+                <p><strong>Date:</strong> @item.JobDate.ToString("MM/dd/yyyy")</p>
+                <p><strong>Description:</strong> @item.JobDescription</p>
+                <p><strong>Company:</strong> @item.Company.CompanyName</p>
+                <div class="actions">
+                    <a class="btn" asp-action="Details" asp-route-id="@item.JobId"><i class="fas fa-info-circle"></i> Details</a>
+                    <a class="btn" asp-action="Edit" asp-route-id="@item.JobId"><i class="fas fa-edit"></i> Edit</a>
+                    <a class="btn" asp-action="Delete" asp-route-id="@item.JobId"><i class="fas fa-trash-alt"></i> Delete</a>
+                    <a class="btn " asp-action="ShowApplicants" asp-route-id="@item.JobId" onclick="setJobId(@item.JobId)"><i class="fas fa-arrow-right"></i> Show Applicants</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<div class="create-new-btn">
+    <a class="btn" asp-action="Create"><i class="fas fa-plus"></i> Create New</a>
+</div>
+
+<script>
+    function setJobId(jobId) {
+        ViewBag.JobId = jobId;
+    }
+</script>

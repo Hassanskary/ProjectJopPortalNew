@@ -1,0 +1,43 @@
+﻿@model IEnumerable<JopPortal.Models.Job>
+
+@{
+    ViewData["Title"] = "Available Jobs!";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<link rel="stylesheet" href="~/css/ExploreJobs.css" />
+<div class="header">
+    <h1>@ViewData["Title"]</h1>
+</div>
+
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="card">
+            <div class="card-body card-details">
+                <h2 class="card-title">@item.JobCategory</h2>
+                <p class="custom-margin"><strong>Type:</strong> @item.JobType</p>
+                <p class="custom-margin"><strong>Location:</strong> @item.JopLocation</p>
+                <p class="custom-margin"><strong>Salary:</strong> @item.JopSalary</p>
+                <p class="custom-margin"><strong>Available Places:</strong> @item.AvailablePlaces</p>
+                <p class="custom-margin"><strong>Date:</strong> @item.JobDate.ToString("MM/dd/yyyy")</p>
+                <p class="custom-margin"><strong>Description:</strong> @item.JobDescription</p>
+                <div class="actions">
+                    <a class="btn" asp-action="ShowJob" asp-controller="Apply" asp-route-id="@item.JobId">Apply</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="container">
+    <!-- Button to navigate to Home/Index -->
+    <div class="navigation">
+        <a class="btn" asp-action="Index" asp-controller="Home">Back to Home</a>
+    </div>
+</div>
+
+<script>
+    function setJobId(jobId) {
+        ViewBag.JobId = jobId;
+    }
+</script>

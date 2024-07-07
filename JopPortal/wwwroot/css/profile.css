@@ -1,0 +1,76 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+}
+.user-card {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    width: 1500px;
+    height: 500px;
+    text-align: left;
+}
+ .user-card .card-body {
+        padding: 20px;
+        width: 1200px;
+    }
+
+    .user-card h2 {
+        color: #007bff;
+    }
+
+    .user-card h3 {
+        margin-bottom: 20px;
+    }
+
+.user-photo {
+    width: 350px;
+    max-width: 280px;
+    height: 220px;
+    border-radius: 50%;
+    margin-top: 30px;
+    
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.solved button {
+    background-color: #003971;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+    .solved button:hover {
+        background-color: #00264d;
+    }
+.card-title {
+    margin-bottom: 20px;
+}
+
+body {
+    background-image: url(/images/profile.jpg);
+}

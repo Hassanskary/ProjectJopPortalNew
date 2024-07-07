@@ -1,0 +1,32 @@
+.table {
+    width: 1000px;
+    border-collapse: collapse;
+    font-size: 16px; 
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.action-buttons form {
+    display: inline-block;
+    margin-right: 10px; 
+}
+
+    .action-buttons form:last-child {
+        margin-right: 0; 
+    }
+.cv-link {
+    color: #135d66; 
+    text-decoration: none; 
+}
+
+    .cv-link:hover {
+        text-decoration: underline; 
+    }

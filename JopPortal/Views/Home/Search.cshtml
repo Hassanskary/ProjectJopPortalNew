@@ -1,0 +1,60 @@
+﻿@model List<JopPortal.Models.Job>
+
+@{
+    ViewData["Title"] = "Search Results";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+
+<h2>Search for a Job</h2>
+<div class="row">
+    <div class="col-md-6">
+        <form class="d-flex" asp-action="Search" asp-controller="Home">
+            <input name="searchTerm" class="form-control me-1" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-dark" type="submit">Search</button>
+        </form>
+    </div>
+</div>
+
+@if (ViewBag.SearchTerm!=null)
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Company</th>
+                <th>Job Category</th>
+                <th>Job Type</th>
+                <th>Job Location</th>
+                <th>Salary</th> 
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in Model)
+            {
+                <tr>
+                    <td>@job.Company?.CompanyName</td>
+                    <td>@job.JobCategory</td>
+                    <td>@job.JobType</td>
+                    <td>@job.JopLocation</td>
+                    <td>@job.JopSalary</td>
+                    <td>
+                        <div class="container">
+                            <form asp-action="ApplyForJob" asp-controller="Apply" method="post">
+                                <input type="hidden" name="jobId" value="@job.JobId" />
+
+                                <button type="submit" class="btn btn-dark">Apply Job</button>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (ViewBag.SearchTerm==null){
+    <p>please enter Value </p>
+}
+else
+{
+    <p>No results found.</p>
+}

@@ -1,0 +1,73 @@
+body {
+    background-image: url('/images/ExploreJobs.jpg');
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+    color: aliceblue;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 830px;
+    text-align: left; /* Align text to the left */
+}
+
+.card-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+    .actions .btn {
+        margin-left: 10px;
+    }
+
+.create-new-btn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: #135d66;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+    .btn:hover {
+        background-color: #0e4f57;
+    }
+
+    .btn i {
+        margin-right: 50px;
+    }
+
+.custom-margin {
+    margin-left: 0;
+}

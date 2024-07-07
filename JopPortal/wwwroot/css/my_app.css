@@ -1,0 +1,122 @@
+﻿body {
+    background-image: url(/images/all-jobs.jpg);
+    background-size: cover;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+    .header h1 {
+        font-size: 40px;
+        color: #135d66;
+        margin: 0;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #135d66;
+        display: inline-block;
+    }
+
+.btn {
+    display: inline-block;
+    padding: 7px 15px;
+    background-color: #135d66;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+    .btn:hover {
+        background-color: #0e4f57;
+    }
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.4);
+    margin-bottom: 20px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.actions {
+    margin-top: 20px;
+}
+
+    .actions .btn {
+        margin-right: 10px;
+    }
+
+.show-applicants-btn {
+    margin-left: 810px;
+}
+
+.container {
+    margin-bottom: 50px;
+}
+
+.create-new-btn {
+    text-align: center;
+}
+
+    .create-new-btn .btn {
+        padding: 10px 20px;
+        background-color: #135d66;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+        .create-new-btn .btn:hover {
+            background-color: #0e4f57;
+        }
+
+.card-details p {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.card-details strong {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #135d66;
+}
+
+.show-applicants-btn {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+    .show-applicants-btn .btn {
+        padding: 10px 20px;
+        background-color: #135d66;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+        border: none;
+        cursor: pointer;
+    }
+
+        .show-applicants-btn .btn:hover {
+            background-color: #0e4f57;
+        }
+
+        .show-applicants-btn .btn i {
+            margin-left: 5px;
+        }
